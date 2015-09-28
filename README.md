@@ -13,6 +13,7 @@ http://www.vagrantup.com/
 $ vagrant plugin install vagrant-hostsupdater
 ```
 Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!
+
 1. Download vagrant box
 ```
 vagrant box add miya0001/vccw
@@ -31,6 +32,7 @@ Default user
 
 ## phpMyAdmin
 
+http://pm-wp.dev/phpmyadmin
 * Username: `wordpress`
 * Password: `wordpress`
 
