@@ -6,18 +6,18 @@ This is a Vagrant configuration designed for development of WordPress plugins, t
 
 1. Install VirtualBox.
 https://www.virtualbox.org/
-1. Install Vagrant.
+2. Install Vagrant.
 http://www.vagrantup.com/
-1. Install the vagrant-hostsupdater plugin. (Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!)
+3. Install the vagrant-hostsupdater plugin. (Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!)
 ```
 $ vagrant plugin install vagrant-hostsupdater
 ```
-1. Download vagrant box
+4. Download vagrant box
 ```
 vagrant box add miya0001/vccw
 ```
-1. Run `vagrant up`.
-1. Visit WordPress on the Vagrant in your browser
+5. Run `vagrant up`.
+6. Visit WordPress on the Vagrant in your browser
 Visit http://pm-wp.dev/ or http://192.168.33.10/
 
 ## Environments
