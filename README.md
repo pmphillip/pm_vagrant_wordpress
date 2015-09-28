@@ -1,42 +1,44 @@
-# VCCW (vagrant-chef-wordpress)
+# VCCW4PM (vagrant-chef-wordpress-for-pm)
 
 This is a Vagrant configuration designed for development of WordPress plugins, themes, or websites.
 
-To get started, check out <http://vccw.cc/>
+## Getting Started
 
-## Configuration
-
-1. Copy `provision/default.yml` to `site.yml`.
-1. Edit the `site.yml`.
+1. Install VirtualBox.
+https://www.virtualbox.org/
+1. Install Vagrant.
+http://www.vagrantup.com/
+1. Install the vagrant-hostsupdater plugin.
+```
+$ vagrant plugin install vagrant-hostsupdater
+```
+Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!
+1. Download vagrant box
+```
+vagrant box add miya0001/vccw
+```
 1. Run `vagrant up`.
+1. Visit WordPress on the Vagrant in your browser
+Visit http://pm-wp.dev/ or http://192.168.33.10/
 
-### Note
+### Environments
 
-* The `site.yml` has to be in the same directory with Vagrantfile.
-* You can put just difference to the `site.yml`.
+## WordPress
 
-## Contribute
+Default user
+* Username: `admin`
+* Password: `admin`
 
-### Setting up
+## phpMyAdmin
 
-1. Clone this git repository on your local machine.
-2. Run `bundle install` to fetch all dependencies.
+* Username: `wordpress`
+* Password: `wordpress`
 
-### Running and writing tests
+## ssh
 
-There is automated tests using [Serverspec](http://serverspec.org/).
+* run `vagrant ssh`
 
-The tests files are in the `spec/` directory.
+### Info
 
+To get more knowledge, check out <http://vccw.cc/>
 
-Before running the serverspec tests, you'll need some dependencies.
-
-```
-$ bundle install --path=vendor/bundle
-```
-
-Then to run the tests, just execute following.
-
-```
-$ bundle exec rake spec
-```
