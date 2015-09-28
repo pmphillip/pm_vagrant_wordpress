@@ -8,12 +8,10 @@ This is a Vagrant configuration designed for development of WordPress plugins, t
 https://www.virtualbox.org/
 1. Install Vagrant.
 http://www.vagrantup.com/
-1. Install the vagrant-hostsupdater plugin.
+1. Install the vagrant-hostsupdater plugin. (Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!)
 ```
 $ vagrant plugin install vagrant-hostsupdater
 ```
-Windows does not allow to change hosts files. Please add pm-wp.dev 192.168.33.10 by yourself!
-
 1. Download vagrant box
 ```
 vagrant box add miya0001/vccw
@@ -22,25 +20,25 @@ vagrant box add miya0001/vccw
 1. Visit WordPress on the Vagrant in your browser
 Visit http://pm-wp.dev/ or http://192.168.33.10/
 
-### Environments
+## Environments
 
-## WordPress
+### WordPress
 
 Default user
 * Username: `admin`
 * Password: `admin`
 
-## phpMyAdmin
+### phpMyAdmin
 
 http://pm-wp.dev/phpmyadmin
 * Username: `wordpress`
 * Password: `wordpress`
 
-## ssh
+### ssh
 
 * run `vagrant ssh`
 
-### Info
+## Info
 
 To get more knowledge, check out <http://vccw.cc/>
 
