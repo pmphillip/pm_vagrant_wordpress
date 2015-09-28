@@ -31,6 +31,7 @@ Default user
 ### phpMyAdmin
 
 http://pm-wp.dev/phpmyadmin
+* Database: `wordpress`
 * Username: `wordpress`
 * Password: `wordpress`
 

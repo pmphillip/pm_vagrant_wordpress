@@ -2,6 +2,5 @@
 .bundle
 .idea/
 .vagrant
-Movefile
 vendor
-www
+
